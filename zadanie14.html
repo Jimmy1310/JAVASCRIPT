@@ -1,0 +1,24 @@
+<html>
+<body>
+<div style="font-family:  'Times New Roman', Times, serif; color: rgb(194, 26, 236);">
+ <script language="JavaScript">
+var No_pro=prompt("No=");
+No_pro=parseFloat(No_pro);
+var t_pro=prompt("t=");
+t_pro=parseFloat(t_pro);
+var T12_pro=prompt("T1/2=");
+T12_pro=parseFloat(T12_pro);
+var lmbd_pro=Math.log(2)/T12_pro;
+lmbd_pro=parseFloat(lmbd_pro);
+var N_pro=No_pro*Math.exp(-lmbd_pro*t_pro) 
+N_pro=parseFloat(N_pro);
+
+document.write("No="+No_pro+" sztuk"+"<br>");
+document.write("t="+t_pro+" lat"+"<br>");
+document.write("T1/2= "+T12_pro+" lat"+"<br>");
+document.write("Lambda="+lmbd_pro.toFixed(7)+" 1/rok"+"<br>");
+document.write("N="+N_pro.toFixed(7)+" sztuk"+"<br>");
+ </script>
+</div>
+</body>
+</html>
